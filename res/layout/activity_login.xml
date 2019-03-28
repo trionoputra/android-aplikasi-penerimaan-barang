@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/linearLayout1"
+        android:src="@drawable/ic_logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+         android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+        
+        <EditText
+            android:id="@+id/txtuserid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/putih"
+            android:background="@color/putih_transparan2"
+            android:textColorHint="@color/putih_transparan"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="User ID"
+             >
+        </EditText>
+        
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:layout_height="50dp"
+              android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/putih"
+            android:background="@color/putih_transparan2"
+            android:textColorHint="@color/putih_transparan"
+            android:inputType="textPassword" >
+
+        </EditText>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:background="@drawable/btn_login_state"
+            android:text="OK" />
+    </LinearLayout>
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#44000000"
+        android:clickable="true"
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

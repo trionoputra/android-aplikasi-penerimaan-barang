@@ -1,0 +1,9 @@
+<resources>
+	<color name="bg">#262626</color>
+	<color name="red">#ff3333</color>
+	<color name="red_state">#cc3333</color>
+	<color name="putih">#FFF</color>
+    <color name="item">#000</color>
+	<color name="putih_transparan">#77ffffff</color>
+    <color name="putih_transparan2">#55ffffff</color>
+</resources>

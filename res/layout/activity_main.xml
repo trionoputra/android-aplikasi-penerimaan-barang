@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/actionWrapper" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/actionWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+        
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/btn_login_state"
+            android:layout_toLeftOf="@+id/profileWrapper"
+            android:text="SCAN QR CODE" />
+		
+          <RelativeLayout
+	        android:id="@+id/profileWrapper"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentBottom="true"
+	         android:layout_alignParentRight="true"
+	         android:background="@color/item"
+	        android:layout_centerHorizontal="true" >
+	        
+               <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_user" />
+               
+               
+        </RelativeLayout>
+       
+        
+    </RelativeLayout>
+
+</RelativeLayout>
